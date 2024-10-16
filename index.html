@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-64">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <link rel="Stylesheet" href="carrusel.css">
+    <title>Home</title>
+    <link rel="icon" href="LOOPLOGO.jpg">
+</head>
+<body>
+
+    
+    <header class="cabecera">
+        <br>
+        <br>
+        
+       <center><img src="logo.png" width="600px" height="220px"></center> 
+       <br>
+       <span class="icono" onclick="toggleMenu()">&#9776;</span>
+    </header>
+
+
+    <!--Contenido de la barra-->
+
+   
+    <nav id="barra" class="barra">
+        <a href="#" class="btncerrar" onclick="toggleMenu()">&times;</a>
+        <br>
+        <br>
+        <a href="index.html">Inicio</a>
+        <br>
+        <a href="NoticiasdeJuegos/Noticias.html"> Noticias de Juegos</a>
+        <br>
+        <a href="#">Contacto</a>
+    </nav>
+    <script src="script.js"></script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Aqui esta el principio del carrusel-->
+
+
+    <div class="carrusel">
+        <div class="contenedor">
+            <div class="elemento">
+                <h2>Nuevo invitado a SF6</h2>
+                <br>
+                <p class="infocarrusel">Terry Bogard de la saga de king of figther llega a Street Figther 6 como personaje invitado </p>
+                <br>
+                <img src="img/maxresdefault.jpg" height="500px" width="800px"  alt="Imagen 1" class="imagen">
+            </div>
+            <div class="elemento">
+                <h2>Warzone Mobile ya esta aqui</h2>
+                <br>
+                <p class="infocarrusel">Esto ya es una realidad el famoso FPS llega a celulares de forma gratuita para disfrutar de el en cualquier lugar </p>
+                <br>
+                <img src="img/wz.jpg" height="500px" width="800px" alt="Imagen 2" class="imagen">
+            </div>
+            <div class="elemento">
+                <h2>Ya es hora de preordenar el nuevo Dragon Ball</h2>
+                <br>
+                <p class="infocarrusel">El nuevo juego del famoso anime Dragon Ball esta casi listo para preordenar y que los jugadores recuerden al pupular Budokai Tenkaichi 3</p>
+                <br>
+                <img src="img/cbb03393f0ab1149f2b89a8194ce19e596a24fa5bec6526a.png" height="700px" width="310px" alt="Imagen 3" class="imagen">
+            </div>
+        </div>
+    </div>
+
+    <!--Estos son los dos botones del carrusel-->
+
+    <div class="botones">
+        <button class="boton1" onclick="moverCarrusel(-1)">Anterior</button>
+        <button class="boton2" onclick="moverCarrusel(1)">Siguiente</button>
+    </div>
+
+    <!--Y la funcion de mover el carrusel-->
+
+    <script>
+        let indice = 0;
+
+        function moverCarrusel(direccion) {
+            const contenedor = document.querySelector('.contenedor');
+            const elementos = document.querySelectorAll('.elemento');
+            indice = (indice + direccion + elementos.length) % elementos.length;
+            contenedor.style.transform = `translateX(${-indice * 100}%)`;
+        }
+    </script>
+
+
+
+    <!--Final de el carrusel-->
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    
+    <br>
+    
+
+    <section>
+        <div class="contenido">
+            <center>
+                <a href="news1.html">
+             <img src="beyond.jpeg" width="400px" height="300px">  
+             
+             <p>Beyond Good And Evil 2, Lanzamiento previsto para el año 2025<br>contiene multijugador<br>
+                 para resolver los fallos verdaderamente molestos del juego.
+            </p>
+           </a>
+        </center>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+   
+
+
+    <section>
+        <div class="contenido"> 
+            <center>
+                <a href="news2.html">
+             <img src="dkk.jpeg" width="400px" height="300px" >  
+             
+             <p>Donkey Kong Country Returns HD es una remasterización del juego original de Wii,<br>
+                 lanzado para Nintendo Wii U, contando con mejora de gráficos y Multijugador cooperativo.
+            </p>
+           </a>
+        </center>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+   
+    
+
+    <section>
+        <div class="contenido">
+            <center>
+                <a href="news3.html">
+             <img src="kindomgame.jpeg" width="400px" height="300px">  
+             
+             <p>Kingdom Come: Deliverance II es la secuela del exitoso juego de rol de <br>
+                 mundo abierto desarrollado por Warhorse Studios, cuenta con narrativa y una buena<br>
+                 Tecnología y Gráficos.
+            </p>
+           </a>
+        </center>
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+   
+
+    <section>
+        <div class="contenido">
+            <center>
+                <a href="news4.html">
+             <img src="avowed.jpeg" width="400px" height="300px">  
+             
+             <p>Avowed es un juego de rol en primera persona desarrolado por Obsidian Entertaiment, <br>
+                 cuenta con Gráficos buenos y Tecnología reciente.
+            </p>
+           </a>
+        </center>
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer><p class="copy">&copy;Derechos Reservados Shelby´s Company</p></footer>
+
+
+
+</body>
+</html>

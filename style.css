@@ -1,0 +1,302 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.elemento {
+    background-color: rgba(230, 228, 221, 0.788);
+}
+
+
+
+body{
+    
+
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+    background-image: linear-gradient(rgba(241, 237, 237, 0.507), rgba(236, 229, 229, 0.521)), url(LOOPLOGO.jpg);
+    backdrop-filter: blur(2px);
+    background-size: 170px;
+    background-repeat: repeat;
+
+
+
+
+}
+
+.icono {
+    font-size: 80px;
+    cursor: pointer;
+    float: left;
+    
+}
+
+
+
+.cabecera {
+    background-color: rgb(128, 128, 192);
+   
+    background-size: cover;
+    margin-top: -15px ;
+    
+}
+
+/*barra*/
+
+.barra {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+
+.barra a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.barra a:hover {
+    background-color: #575757;
+}
+
+.barra .btncerrar {
+
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 80px;
+}
+
+.barra-open {
+    width: 250px;
+}
+
+.contenido {
+    padding-top: 25px;
+    background-color: rgba(230, 228, 221, 0.788);
+    height: 400px;
+    width: 850px;
+    border-radius: 25px;
+}
+
+
+section {
+    padding-left: 200px;
+}
+
+img {
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: inherit;
+}
+
+p {
+
+    color: rgb(0, 0, 0);
+
+}
+
+.copy {
+    color: white;
+    text-align: center;
+    background-color:  rgb(37, 37, 202);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.infocarrusel {
+    color: #111;
+}
+
+
+
+
+
+.boton1 {
+
+
+    background-color: rgba(12, 68, 255, 0.774);
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2ren;
+    cursor: pointer;
+}
+
+.boton2 {
+
+    background-color:  rgba(12, 68, 255, 0.774);
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2ren;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+
+/* Estilos generales */
+body {
+    height: auto; /* Cambia a auto para permitir que el contenido crezca */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .icono {
+        font-size: 60px; /* Reduce el tamaño del icono en pantallas pequeñas */
+    }
+
+    .barra-open {
+        width: 250px;
+    }
+    
+
+    .barra {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    
+    }
+
+    .barra a {
+        font-size: 20px; /* Reduce el tamaño de los enlaces en la barra */
+    }
+
+    .contenido {
+        width: 90%; /* Ancho más flexible para pantallas pequeñas */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    section {
+        padding-left: 10px; /* Reduce el padding para pantallas pequeñas */
+        padding-right: 10px; /* Asegura padding a la derecha */
+    }
+
+    img {
+        width: 100%; /* Hace que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .icono {
+        font-size: 50px; /* Ajusta el tamaño del icono aún más */
+    }
+
+    .barra {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    
+    }
+    
+
+    .barra a {
+        font-size: 18px; /* Más pequeño para pantallas muy pequeñas */
+    }
+
+    .contenido {
+        width: 100%; /* El contenido ocupa el 100% */
+    }
+
+    .barra-open {
+        width: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    .icono {
+        font-size: 50px; /* Ajusta el tamaño del icono aún más */
+    }
+
+    .barra {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    
+    }
+    
+
+    .barra a {
+        font-size: 18px; /* Más pequeño para pantallas muy pequeñas */
+    }
+
+    .contenido {
+        width: 100%; /* El contenido ocupa el 100% */
+    }
+
+    .barra-open {
+        width: 250px;
+    }
+    
+
+}
