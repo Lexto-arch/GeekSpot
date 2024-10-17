@@ -170,6 +170,20 @@ body {
 
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
+
+
+
+    .carrusel {
+
+         padding-left: 10px;
+        
+    }
+
+
+
+
+
+    
     .icono {
         font-size: 60px; /* Reduce el tamaño del icono en pantallas pequeñas */
     }
