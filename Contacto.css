@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera {
+    background-color: rgb(37, 37, 202);
+    color: white;
+    text-align: center;
+    padding: 50px 70px;
+    font-size: 2rem;
+    border-radius: 80px;
+    margin-top: -10px;
+    margin-left: -5px;
+    margin-right: -5px;
+
+}
+
+.main-content {
+    width: 1000px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f4f4f4; 
+}
+
+#contact{
+    color: white;
+}
+
+.contacto {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #8a8686;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.info-contacto {
+    margin: 20px 0;
+}
+
+.info-contacto p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.redes-sociales a.Twitter {
+    background-color:#333;
+}
+
+.redes-sociales a.instagram {
+    background-color: #E4405F;
+}
+
+
+
+@media (max-width: 700px) {
+
+
+    .main-content {
+        width: 300px;
+        height: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color: #f4f4f4; 
+    }
+    
+
+
+}
