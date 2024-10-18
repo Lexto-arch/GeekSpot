@@ -304,3 +304,66 @@ body {
     
 
 }
+
+
+
+
+
+
+
+.botones {
+    display: flex;
+    justify-content: space-between; /* Los botones se mantendrán uno al lado del otro */
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.boton1, .boton2 {
+    padding: 10px 20px; /* Mantiene el padding original */
+    font-size: 16px; /* Tamaño de fuente original */
+    border: 1px solid #ccc; /* Borde predeterminado (sin cambios) */
+    background-color: rgba(12, 68, 255, 0.774); /* Fondo predeterminado (sin cambios) */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    flex-shrink: 0; /* Evita que los botones se reduzcan en tamaño */
+    max-width: 200px; /* Límite para evitar que se expandan demasiado */
+}
+
+/* Ajuste en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .botones {
+        justify-content: space-between; /* Mantiene la separación entre botones */
+    }
+
+    .boton1, .boton2 {
+        width: 45%; /* Los botones ocupan el 45% de la pantalla, manteniéndose uno al lado del otro */
+    }
+}
+
+/* Para dispositivos más pequeños, como móviles */
+@media screen and (max-width: 480px) {
+    .botones {
+        flex-direction: column; /* Los botones se apilan verticalmente */
+        align-items: center;
+    }
+
+    .boton1, .boton2 {
+        width: 80%; /* Los botones ocupan el 80% del ancho de la pantalla */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
